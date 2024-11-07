@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/neet india & Tella Classes logo-01 (2).jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><img src="img/neet india & Tella Classes logo-01 (2).jpg" style="max-width: 100px; max-height: 76px;" alt="">Neet India Academy</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <a href="News.html" class="nav-item nav-link">News & Annocement</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Results and Testimonials</a>
+                        <a href="performance.html" class="dropdown-item">Mock Tests & Performance Tracking</a>
+                        <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Career</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact US</a> -->
+            </div>
+            <div class="nav-item dropdown">
+                <img src="img/team-1.jpg" alt="" class="new_dot" style="border-radius: 50px; max-width: 70px; padding: 10px;">
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="profile.html" class="dropdown-item active">Profile</a>
+                    <a href="login.html" class="dropdown-item">Sign Out</a>
+                </div>
+            </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <!-- Profile Section with Gear Icon Dropdown -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header"> 
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center position-relative">
+                    <div class="d-inline-block position-relative">
+                        <i class="fa-solid fa-cart-shopping gear-icon" style="color: #fff; padding: 10px; font-size: 150%;"></i>
+                        <!-- Dropdown on hover -->
+                        <div class="dropdown-content">
+                            <a href="#" onclick="openEditProfileModal()">Cart</a>
+                        </div>
+                    </div>
+                    <img src="img/testimonial-3.jpg" style="border-radius: 50px;" alt="">
+                    
+                    <!-- Gear Icon with Dropdown Trigger -->
+                    <div class="d-inline-block position-relative">
+                        <i class="fa-solid fa-gear gear-icon" style="color: #fff; padding: 10px; font-size: 150%;"></i>
+                        <!-- Dropdown on hover -->
+                        <div class="dropdown-content">
+                            <a href="#" onclick="openEditProfileModal()">Edit</a>
+                        </div>
+                    </div>
+    
+                    <h1 class="display-3 text-white animated slideInDown">John Doe</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Student</a></li>
+                        </ol>
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">State, India</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Edit Profile Modal -->
+    <div id="editProfileModalCustom" class="modal-custom">
+        <div class="modal-content-custom" style="position: relative; top: 55px;">
+            <span class="close" onclick="closeEditProfileModal()">&times;</span>
+            <h3>Edit Profile</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="username" class="form-label" style="position: relative; top: 20px;">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="John Doe">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="johndoe@example.com" style="position: relative; top: -20px;">
+                </div>
+                <div class="mb-3">
+                    <label for="otherDetails" class="form-label">Other Details</label>
+                    <textarea class="form-control" id="otherDetails" rows="3" style="position: relative; top: -20px;"></textarea>
+                </div>
+            </form>
+            <button type="button" class="btn btn-secondary" onclick="closeEditProfileModal()">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+    </div>
+    
+    <script>
+        // Function to open the Edit Profile modal
+        function openEditProfileModal() {
+            document.getElementById("editProfileModalCustom").style.display = "block";
+        }
+    
+        // Function to close the Edit Profile modal
+        function closeEditProfileModal() {
+            document.getElementById("editProfileModalCustom").style.display = "none";
+        }
+    
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById("editProfileModalCustom");
+            if (event.target == modal) {
+                closeEditProfileModal();
+            }
+        }
+    </script>
+    
+    <!-- Bootstrap JS (required for modal functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    /* Gear Icon and Dropdown Styling */
+    .gear-icon {
+        cursor: pointer;
+    }
+
+    .form-control{
+        width: 100%;
+            padding: 12px 15px;
+            margin: 12px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            transition: border-color 0.3s;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%; /* Show below the gear icon */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 10px;
+        z-index: 10;
+    }
+
+    .dropdown-content a {
+        color: #333;
+        text-decoration: none;
+        display: block;
+        padding: 5px 10px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Show dropdown on gear icon hover */
+    .gear-icon:hover + .dropdown-content,
+    .dropdown-content:hover {
+        display: block;
+    }
+
+    /* Modal background */
+    .modal-custom {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    /* Modal content */
+    .modal-content-custom {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 400px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        position: relative;
+        text-align: center;
+    }
+
+    /* Close button */
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<!-- Bootstrap JS (required for modal functionality) -->
+    <!-- Carousel End -->
+
+<!--Settings:end-->
+
+
+<!-- Courses Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
+            <h1 class="mb-5">Your Purchased Courses</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="course-item bg-light" style="border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+                  <div class="position-relative overflow-hidden">
+                    <img class="img-fluid" src="img/course-1.jpg" alt="" style="border-radius: 15px;">
+                  </div>
+                  <div class="text-center p-4 pb-0">
+                    <h3 class="mb-4">NEET Repeat</h3>
+                    <h3 class="mb-0">$149.00</h3>
+                    <div class="mb-3">
+                      <small class="fa fa-star text-primary"></small>
+                      <small class="fa fa-star text-primary"></small>
+                      <small class="fa fa-star text-primary"></small>
+                      <small class="fa fa-star text-primary"></small>
+                      <small class="fa fa-star text-primary"></small>
+                      <small>(123)</small>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 30px; margin: 10px;">Get Started</a>
+              
+                    <!-- Progress Bars with Effects -->
+                    <div class="px-4 py-3">
+                      <!-- Completed Videos Progress -->
+                      <div class="progress-label mb-2" style="font-weight: bold;">Completed Videos</div>
+                      <div class="progress mb-3" style="height: 10px; border-radius: 8px; background-color: #e9ecef;">
+                        <div class="progress-bar bg-gradient-success progress-fill" data-fill="70" style="height: 100%;" aria-valuemin="0" aria-valuemax="100">
+                          <span class="progress-text">70%</span>
+                        </div>
+                      </div>
+              
+                      <!-- Completed Assignments Progress -->
+                      <div class="progress-label mt-3 mb-2" style="font-weight: bold;">Completed Assignments</div>
+                      <div class="progress" style="height: 10px; border-radius: 8px; background-color: #e9ecef;">
+                        <div class="progress-bar bg-gradient-info progress-fill" data-fill="50" style="height: 100%;" aria-valuemin="0" aria-valuemax="100">
+                          <span class="progress-text">50%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex border-top">
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
+                    <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                  </div>
+                </div>
+              </div>
+              
+              
+<style>
+ /* Gradient Styling */
+.bg-gradient-success {
+  background: #06BBCC;
+}
+
+.bg-gradient-info {
+  background: #06BBCC;
+}
+
+/* Styling and animation */
+.progress-fill {
+  width: 0;
+  transition: width 1s ease-in-out;
+  position: relative;
+}
+
+.progress-fill:hover .progress-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.progress-text {
+  position: absolute;
+  right: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+</style>   
+<script>
+    // Function to animate progress bars when in view
+function animateProgressBars() {
+  const progressBars = document.querySelectorAll('.progress-fill');
+
+  progressBars.forEach(bar => {
+    const fillValue = bar.getAttribute('data-fill');
+    const barPosition = bar.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight;
+
+    // Check if progress bar is in the viewport
+    if (barPosition < screenPosition) {
+      bar.style.width = fillValue + '%';
+    }
+  });
+}
+
+// Event listener for scrolling
+window.addEventListener('scroll', animateProgressBars);
+
+// Initial call to fill bars that are already in view on page load
+document.addEventListener('DOMContentLoaded', animateProgressBars);
+
+</script>           
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="course-item bg-light" style=" border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/course-2.jpg" alt="" style=" border-radius: 15px;">
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <!-- <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a> -->
+                        </div>
+                    </div>
+                    <div class="text-center p-4 pb-0">
+                        <h3 class="mb-4">NEET Crash</h3>
+                        <h3 class="mb-0">$149.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small>(123)</small>
+                        </div>
+                        <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px; margin: 10px;">Get Started</a>
+                        <div class="px-4 py-3">
+                            <!-- Completed Videos Progress -->
+                            <div class="progress-label mb-2" style="font-weight: bold;">Completed Videos</div>
+                            <div class="progress mb-3" style="height: 10px; border-radius: 8px; background-color: #e9ecef;">
+                              <div class="progress-bar bg-gradient-success progress-fill" data-fill="70" style="height: 100%;" aria-valuemin="0" aria-valuemax="100">
+                                <span class="progress-text">70%</span>
+                              </div>
+                            </div>
+                    
+                            <!-- Completed Assignments Progress -->
+                            <div class="progress-label mt-3 mb-2" style="font-weight: bold;">Completed Assignments</div>
+                            <div class="progress" style="height: 10px; border-radius: 8px; background-color: #e9ecef;">
+                              <div class="progress-bar bg-gradient-info progress-fill" data-fill="50" style="height: 100%;" aria-valuemin="0" aria-valuemax="100">
+                                <span class="progress-text">50%</span>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="d-flex border-top">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="course-item bg-light" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; border-radius: 15px;">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/course-3.jpg" alt="" style=" border-radius: 15px;">
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <!-- <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a> -->
+                        </div>
+                    </div>
+                    <div class="text-center p-4 pb-0">
+                        <h3 class="mb-4">KEAM</h3>
+                        <h3 class="mb-0">$149.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small>(123)</small>
+                        </div>
+                        <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px; margin: 10px;">Get Started</a>
+                        <div class="px-4 py-3">
+                            <!-- Completed Videos Progress -->
+                            <div class="progress-label mb-2" style="font-weight: bold;">Completed Videos</div>
+                            <div class="progress mb-3" style="height: 10px; border-radius: 8px; background-color: #e9ecef;">
+                              <div class="progress-bar bg-gradient-success progress-fill" data-fill="70" style="height: 100%;" aria-valuemin="0" aria-valuemax="100">
+                                <span class="progress-text">70%</span>
+                              </div>
+                            </div>
+                    
+                            <!-- Completed Assignments Progress -->
+                            <div class="progress-label mt-3 mb-2" style="font-weight: bold;">Completed Assignments</div>
+                            <div class="progress" style="height: 10px; border-radius: 8px; background-color: #e9ecef;">
+                              <div class="progress-bar bg-gradient-info progress-fill" data-fill="50" style="height: 100%;" aria-valuemin="0" aria-valuemax="100">
+                                <span class="progress-text">50%</span>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="d-flex border-top">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="course-item bg-light" style=" border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/course-3.jpg" alt="" style=" border-radius: 15px;">
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <!-- <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a> -->
+                        </div>
+                    </div>
+                    <div class="text-center p-4 pb-0">
+                        <h3 class="mb-4">ICAR</h3>
+                        <h3 class="mb-0">$149.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small>(123)</small>
+                        </div>
+                        <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px; margin: 10px;">Get Started</a>
+                        <div class="px-4 py-3">
+                            <!-- Completed Videos Progress -->
+                            <div class="progress-label mb-2" style="font-weight: bold;">Completed Videos</div>
+                            <div class="progress mb-3" style="height: 10px; border-radius: 8px; background-color: #e9ecef;">
+                              <div class="progress-bar bg-gradient-success progress-fill" data-fill="70" style="height: 100%;" aria-valuemin="0" aria-valuemax="100">
+                                <span class="progress-text">70%</span>
+                              </div>
+                            </div>
+                    
+                            <!-- Completed Assignments Progress -->
+                            <div class="progress-label mt-3 mb-2" style="font-weight: bold;">Completed Assignments</div>
+                            <div class="progress" style="height: 10px; border-radius: 8px; background-color: #e9ecef;">
+                              <div class="progress-bar bg-gradient-info progress-fill" data-fill="50" style="height: 100%;" aria-valuemin="0" aria-valuemax="100">
+                                <span class="progress-text">50%</span>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="d-flex border-top">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Courses End -->
+
+
+
+
+    <!-- Service Start -->
+     <div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Assignments</h6>
+            <h1 class="mb-5">Upload Your Assignments</h1>
+        </div>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3" onclick="openModal('NEET course assignments', '21/05/2025')">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">Assignment</h5>
+                            <p>NEET course assignments, <br>Due: 21/05/2025 <br> Click to upload.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3" onclick="openModal('KEAM course assignments', '21/05/2025')">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">Assignment</h5>
+                            <p>KEAM course assignments, <br>Due: 21/05/2025 <br> Click to upload.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3" onclick="openModal('NEET Repeat course assignments', '21/05/2025')">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">Assignment</h5>
+                            <p>NEET repeat course assignments,<br>Due: 21/05/2025 <br>Click to upload.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3" onclick="openModal('ICAR course assignments', '21/05/2025')">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">Assignment</h5>
+                            <p>ICAR course assignments, <br>Due: 21/05/2025 <br> Click to upload.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="assignmentModal" class="modal" style="display: none;">
+    <div class="modal-content" style="position: relative; top: 55px;">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="assignmentTitle"></h3>
+      <p id="assignmentDueDate"></p>
+      <form id="uploadForm">
+        <label for="assignmentFile">Upload Your Assignment:</label>
+        <input type="file" style="padding: 10px;" id="assignmentFile" name="assignmentFile" required>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <style>
+    /* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  </style>
+
+  <script>
+    // Function to open the modal and set assignment details
+function openModal(title, dueDate) {
+  document.getElementById("assignmentTitle").innerText = title;
+  document.getElementById("assignmentDueDate").innerText = "Due: " + dueDate;
+  document.getElementById("assignmentModal").style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+  document.getElementById("assignmentModal").style.display = "none";
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+  const modal = document.getElementById("assignmentModal");
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+
+// Form submission handling (Example - Customize as needed)
+document.getElementById("uploadForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Assignment uploaded successfully!");
+  closeModal();
+});
+
+  </script>
+    <!-- Service End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Schedules</h6>
+                <h1 class="mb-5">Check Your Upcoming Schedules!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">John Doe</h5>
+                    <p>Student</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Live Classes to attend on 8pm, on 28/04/2025.<br> Due date: 25/05/2024</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">John Doe</h5>
+                    <p>Student</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Assignments to be completed on 28/05/2025.<br> Due date: 25/05/2024</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">John Doe</h5>
+                    <p>Student</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Mock test to be completed on 28/05/2025, 8pm.<br> Due date: 25/05/2024</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">John Doe</h5>
+                    <p>Student</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Assignment to be completed on 25/5/2025.<br> Due date: 25/05/2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Notes</h6>
+                <h1 class="mb-5">Download The Notes & Prepare For Future</h1>
+            </div>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item text-center pt-3" onclick="openDownloadModal('NEET Note', 'NEET Course, basic knowledge section', 'neet-note.pdf')">
+                            <div class="p-4">
+                                <i class="fa-solid fa-3x fa-download text-primary mb-4"></i>
+                                <h5 class="mb-3">KEAM Note</h5>
+                                <p>KEAM Course, basic knowledge section<br> Click to download.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item text-center pt-3" onclick="openDownloadModal('NEET Note', 'NEET Course, basic knowledge section', 'neet-note.pdf')">
+                            <div class="p-4">
+                                <i class="fa-solid fa-3x fa-download text-primary mb-4"></i>
+                                <h5 class="mb-3">NEET Note</h5>
+                                <p>NEAT course, basic knowledge section<br> Click to download.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item text-center pt-3" onclick="openDownloadModal('NEET Note', 'NEET Course, basic knowledge section', 'neet-note.pdf')">
+                            <div class="p-4">
+                                <i class="fa-solid fa-3x fa-download text-primary mb-4"></i>
+                                <h5 class="mb-3">NEAT Repeat</h5>
+                                <p>NEET repeat course, advance knowledge section<br> Click to download.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item text-center pt-3" onclick="openDownloadModal('NEET Note', 'NEET Course, basic knowledge section', 'neet-note.pdf')">
+                            <div class="p-4">
+                                <i class="fa-solid fa-3x fa-download text-primary mb-4"></i>
+                                <h5 class="mb-3">ICAR Note</h5>
+                                <p>ICAR course, basic knowledge section<br> Click to download.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Download Modal Structure -->
+<div id="downloadModal" class="modal" style="display: none;">
+    <div class="modal-content" style="position: relative; top: 55px;">
+      <span class="close" onclick="closeDownloadModal()">&times;</span>
+      <h3 id="noteTitle"></h3>
+      <p id="noteDescription"></p>
+      <a id="downloadLink" href="#" download class="btn btn-primary mt-3">Download Now</a>
+    </div>
+  </div>
+  <style>
+    /* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  </style>
+  <script>
+    // Function to open the modal and set note details
+function openDownloadModal(title, description, filePath) {
+  document.getElementById("noteTitle").innerText = title;
+  document.getElementById("noteDescription").innerText = description;
+  document.getElementById("downloadLink").href = filePath;  // Set the file path for downloading
+  document.getElementById("downloadModal").style.display = "block";
+}
+
+// Function to close the modal
+function closeDownloadModal() {
+  document.getElementById("downloadModal").style.display = "none";
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+  const modal = document.getElementById("downloadModal");
+  if (event.target == modal) {
+    closeDownloadModal();
+  }
+}
+
+  </script>
+        <!-- Service End -->
+
+
+        <!-- Service Start -->
+     <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Question Papers</h6>
+                <h1 class="mb-5">Download Past Question Papers & Prepare</h1>
+            </div>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item text-center pt-3" onclick="openExamModal('KEAM 2024', 'KEAM 2024 question paper', 'keam-2024.pdf')">
+                            <div class="p-4">
+                                <i class="fa-solid fa-3x fa-download text-primary mb-4"></i>
+                                <h5 class="mb-3">NEET 2024</h5>
+                                <p>NEET 2024 question paper,<br> Click to download.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item text-center pt-3" onclick="openExamModal('KEAM 2024', 'KEAM 2024 question paper', 'keam-2024.pdf')">
+                            <div class="p-4">
+                                <i class="fa-solid fa-3x fa-download text-primary mb-4"></i>
+                                <h5 class="mb-3">KEAM 2024</h5>
+                                <p>KEAM 2024 question paper,<br> Click to download.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item text-center pt-3" onclick="openExamModal('KEAM 2024', 'KEAM 2024 question paper', 'keam-2024.pdf')">
+                            <div class="p-4">
+                                <i class="fa-solid fa-3x fa-download text-primary mb-4"></i>
+                                <h5 class="mb-3">NEET 2023</h5>
+                                <p>NEET repeat 2024 question paper,<br>Click to download.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item text-center pt-3" onclick="openExamModal('KEAM 2024', 'KEAM 2024 question paper', 'keam-2024.pdf')">
+                            <div class="p-4">
+                                <i class="fa-solid fa-3x fa-download text-primary mb-4"></i>
+                                <h5 class="mb-3">ICAR 2024</h5>
+                                <p>ICAR course 2024 question paper,<br> Click to download.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Exam Modal Structure -->
+<div id="examModal" class="modal" style="display: none;">
+    <div class="modal-content" style="position: relative; top: 55px;">
+      <span class="close" onclick="closeExamModal()">&times;</span>
+      <h3 id="examTitle"></h3>
+      <p id="examDescription"></p>
+      <a id="examDownloadLink" href="#" download class="btn btn-primary mt-3">Download Now</a>
+    </div>
+  </div>
+
+  <style>
+    /* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  </style>
+  <script>
+    // Function to open the modal and set exam details
+function openExamModal(title, description, filePath) {
+  document.getElementById("examTitle").innerText = title;
+  document.getElementById("examDescription").innerText = description;
+  document.getElementById("examDownloadLink").href = filePath;  // Set the file path for downloading
+  document.getElementById("examModal").style.display = "block";
+}
+
+// Function to close the modal
+function closeExamModal() {
+  document.getElementById("examModal").style.display = "none";
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+  const modal = document.getElementById("examModal");
+  if (event.target == modal) {
+    closeExamModal();
+  }
+}
+
+  </script>
+        <!-- Service End -->
+
+
+
+
+
+         <!-- Service Start -->
+         <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Mock Test</h6>
+                    <h1 class="mb-5">Challenge Yourself and Gain Confidence, Check Your Knowledge!</h1>
+                </div>
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a href="performance.html">
+                            <div class="service-item text-center pt-3">
+                                <div class="p-4 text-primary mb-4">
+                                    <i class="fa-sharp fa-3x fa-solid fa-crosshairs"></i>
+                                    <h5 class="mb-3">Mock Test</h5>
+                                    <p style="color: #000;">Click to go to Mock Test Page</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!--Service:end-->
+
+
+
+   
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Our Socisl Media</h4>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        This site is Developed by
+                        &copy; <a class="border-bottom" href="cognetz.com">Cognetz</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

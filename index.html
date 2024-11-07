@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/neet india & Tella Classes logo-01 (2).jpg" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,11 +78,10 @@
             </div>
             <div class="nav-item dropdown">
                 <img src="img/team-1.jpg" alt="" class="new_dot" style="border-radius: 50px; max-width: 70px; padding: 10px;"> 
-                <!-- <div class="dropdown-menu fade-down m-0">
-                    <a href="team.html" class="dropdown-item">Profile</a>
-                    <a href="testimonial.html" class="dropdown-item">Results and Testimonials</a>
-                    <a href="404.html" class="dropdown-item">404 Page</a>
-                </div> -->
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="profile.html" class="dropdown-item">Profile</a>
+                    <a href="login.html" class="dropdown-item">Sign Out</a>
+                </div>
             </div>
       </div>
     </nav>
@@ -307,8 +306,8 @@
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="img/course-1.jpg" alt="" style=" border-radius: 15px;">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                <a href="read_more.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="javascript:void(0);" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;" onclick="showEnrollPopup()">Join Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -335,8 +334,8 @@
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="img/course-2.jpg" alt="" style=" border-radius: 15px;">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                <a href="read_more.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="javascript:void(0);" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;" onclick="showEnrollPopup()">Join Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -363,8 +362,8 @@
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="img/course-3.jpg" alt="" style=" border-radius: 15px;">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                <a href="read_more.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="javascript:void(0);" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;" onclick="showEnrollPopup()">Join Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -391,8 +390,8 @@
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="img/course-3.jpg" alt="" style=" border-radius: 15px;">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                <a href="read_more.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="javascript:void(0);" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;" onclick="showEnrollPopup()">Join Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -418,6 +417,119 @@
         </div>
     </div>
     <!-- Courses End -->
+
+
+    <!-- Enrollment Popup Modal -->
+<div id="enrollModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style=" border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Course Enrollment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="enrollmentForm" class="p-4" onsubmit="validateForm(event)">
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Select Course</label>
+                            <select class="form-select" id="course" required>
+                                <option value="">Choose...</option>
+                                <option value="neet">NEET</option>
+                                <option value="keam">KEAM</option>
+                                <option value="icar">ICAR</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Additional Information</label>
+                            <textarea class="form-control" id="info" rows="3" placeholder="Enter any specific requirements..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Styles for Moving Button -->
+<style>
+    #submitBtn {
+        transition: transform 0.2s ease;
+        position: relative;
+    }
+
+    .course-item {
+        border-radius: 15px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    
+
+    .btn-primary:hover {
+        background-color: #084298;
+    }
+
+    .new_wow:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+</style>
+
+<!-- Scripts for Moving Button -->
+<script>
+    function showEnrollPopup() {
+        const modal = new bootstrap.Modal(document.getElementById('enrollModal'));
+        modal.show();
+    }
+
+    function areFieldsFilled() {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const course = document.getElementById('course').value.trim();
+        return name && email && phone && course;
+    }
+
+    function dodgeButton(event) {
+        if (!areFieldsFilled()) {
+            const submitBtn = document.getElementById('submitBtn');
+            const rect = submitBtn.getBoundingClientRect();
+            const offsetX = (Math.random() - 0.5) * 200; // Moves between -100px to +100px horizontally
+            const offsetY = (Math.random() - 0.5) * 200; // Moves between -100px to +100px vertically
+
+            submitBtn.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+            event.preventDefault(); // Prevents accidental form submission
+        }
+    }
+
+    function validateForm(event) {
+        if (!areFieldsFilled()) {
+            alert('Please fill in all the required fields!');
+            event.preventDefault();
+        } else {
+            alert('Form submitted successfully!');
+        }
+    }
+
+    // Attach dodge effect to mouseover event on the submit button
+    document.getElementById('submitBtn').addEventListener('mouseover', dodgeButton);
+</script>
+
 
 
     <div class="container-xxl py-5">
